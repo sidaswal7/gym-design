@@ -1,0 +1,254 @@
+:root{
+    --primary: rgb(234,86,58);
+    --textDark: rgb(35,45,56);
+    --textLight: rgb(122,122,122);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+    color: var(--textLight);
+    font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/*Custom style*/
+.container{
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+}
+.padding{
+    padding: 80px 0;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content: end;
+}
+.item-start{
+    align-items: start;
+}
+.item-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex:0 1 30%;
+}
+.grow{
+    flex: 1 1 auto;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*buttons*/
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: #ffffff;
+    transition: all 200ms ease-in-out;
+}
+.btn:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+/*Texts*/
+.text-center {
+    text-align: center;
+}
+.text-primary{
+    color: var(--primary);
+}
+.font-0 {
+    font-size: 0;
+}
+/*Sec-header*/
+.sec-header{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+.sec-header p{
+    margin-top: 16px;
+    font-weight: 300;
+}
+/*Heading*/
+.heading{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--textDark);
+    margin-bottom: 16px;
+}
+/*Overlay*/
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(35,45,56,0.6);
+}
+/*Header*/
+
+.navbar {
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+}
+.brand h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+.nav-menu-item{
+    font-size: 16px;
+    margin-left: 32px;
+}
+.nav-menu-item a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+.nav-menu-item a:hover{
+    color: var(--primary);
+}
+/*Hero*/
+.hero {
+    position: relative;
+    color: white;
+}
+.bg-video{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.hero-subheading{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.hero-heading{
+    font-size: 84px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0
+}
+.hero .btn{
+    font-size: 16px;
+}
+/*Program*/
+.program-item{
+    margin-top: 30px;
+}
+.program-item img{
+    margin-right: 20px;
+}
+.program-item h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--textDark);
+}
+.program-item p{
+    font-weight: 300;
+    margin: 5px 0;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.program-item a{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* Call to Action*/
+.cta{
+    background: url(../media/cta-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.cta h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+.cta p{
+    color: white;
+    margin: 25px 0;
+
+}
