@@ -97,6 +97,9 @@ a {
 .flex-30{
     flex:0 1 30%;
 }
+.flex-65{
+    flex: 0 1 65%;
+}
 .grow{
     flex: 1 1 auto;
 }
@@ -107,6 +110,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.width-full{
+    width: 100%;
 }
 /*buttons*/
 .btn {
@@ -250,5 +256,45 @@ a {
 .cta p{
     color: white;
     margin: 25px 0;
+}
+/*Classes*/
 
+.classes-item{
+    margin-bottom: 32px ;
+}
+.classes-item a{
+    padding: 24px 32px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 4px;
+}
+.classes-item img {
+    margin-right: 16px;
+}
+.classes-item h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--textDark);
+}
+.btn-secondary {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+}
+.classes-article h3{
+    font-size: 24px;
+    color: var(--textDark);
+    font-weight: 600;
+    margin: 16px 0;
+}
+.classes-article img {
+    border-radius: 4px;
+}
+.classes-article p{
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-weight: 300;
 }
